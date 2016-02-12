@@ -28,9 +28,9 @@ class TaskController {
     }
     
     var mockTasks: [Task] {
-        let task1 = Task(name: "make an app", notes: nil, due: nil, isComplete: false)
-        let task2 = Task(name: "make anothe app", notes: nil, due: nil, isComplete: true)
-        let task3 = Task(name: "make a third app", notes: nil, due: NSDate(timeIntervalSinceNow: NSTimeInterval(300)), isComplete: false)
+        var task1 = Task(name: "make an app", notes: nil, due: nil, isComplete: false)
+        var task2 = Task(name: "make anothe app", notes: nil, due: nil, isComplete: true)
+        var task3 = Task(name: "make a third app", notes: nil, due: NSDate(timeIntervalSinceNow: NSTimeInterval(300)), isComplete: false)
         return [task1, task2, task3]
     }
     
